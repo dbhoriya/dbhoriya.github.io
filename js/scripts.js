@@ -110,9 +110,8 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-		strings: ["I am a Ph.D. scholar in the Department of Mathematics, IIT-Delhi.", "I Live in New Delhi, India."],    /* You can change the home section typing text from
-	                                                                                            here and do not use "&" use "and" */
-            typeSpeed: 50
+		strings: ["Hi! This is Deepak Bhoriya; Presently, working as a Post-Doctoral Researcher."],  
+            typeSpeed: 10
           });
          });
         
