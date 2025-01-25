@@ -658,3 +658,13 @@ ul.buttons li:nth-child(5):hover {
 .sm li a:hover {
   color: #fff;
 }
+.globe-container {
+  text-align: center; /* Centers the globe */
+  margin: 20px auto; /* Adds spacing around the globe */
+}
+
+#clstr_globe {
+  width: 150px; /* Adjust the width */
+  height: 150px; /* Adjust the height */
+  display: inline-block; /* Centers the widget */
+}
