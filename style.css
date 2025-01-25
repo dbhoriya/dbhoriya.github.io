@@ -663,8 +663,18 @@ ul.buttons li:nth-child(5):hover {
   margin: 20px auto; /* Adds spacing around the globe */
 }
 
-#clstr_globe {
-  width: 15px; /* Adjust the width */
-  height: 15px; /* Adjust the height */
-  display: inline-block; /* Centers the widget */
+.globe-wrapper {
+  width: 150px; /* Desired width of the globe */
+  height: 150px; /* Desired height of the globe */
+  margin: 0 auto; /* Centers the globe */
+  position: relative;
+  overflow: hidden; /* Ensures content outside bounds is hidden */
 }
+
+.globe-wrapper iframe {
+  width: 150%; /* Scales the iframe to fit */
+  height: 150%; /* Scales the iframe to fit */
+  transform: scale(0.5); /* Adjusts scale to fit the desired size */
+  transform-origin: top left; /* Ensures scaling is relative to the top-left corner */
+}
+
