@@ -660,20 +660,20 @@ ul.buttons li:nth-child(5):hover {
 }
 .globe-container {
   text-align: center; /* Centers the globe */
-  margin: 20px auto; /* Adds spacing around the globe */
+  margin: 1px auto; /* Adds spacing around the globe */
 }
 
 .globe-wrapper {
-  width: 150px; /* Desired width of the globe */
-  height: 150px; /* Desired height of the globe */
+  width: 1px; /* Desired width of the globe */
+  height: 1px; /* Desired height of the globe */
   margin: 0 auto; /* Centers the globe */
   position: relative;
   overflow: hidden; /* Ensures content outside bounds is hidden */
 }
 
 .globe-wrapper iframe {
-  width: 150%; /* Scales the iframe to fit */
-  height: 150%; /* Scales the iframe to fit */
+  width: 1%; /* Scales the iframe to fit */
+  height: 1%; /* Scales the iframe to fit */
   transform: scale(0.5); /* Adjusts scale to fit the desired size */
   transform-origin: top left; /* Ensures scaling is relative to the top-left corner */
 }
