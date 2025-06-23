@@ -9,7 +9,18 @@
   clear: both;
   height: 0;
 }
-
+<style>
+.blinking-green {
+  color: green;
+  font-weight: bold;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
 * html .clearfix {
   height: 1%;
 }
