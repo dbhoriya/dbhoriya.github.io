@@ -12,12 +12,12 @@
 </script>
   <meta charset="UTF-8">
   <title>Deepak Bhoriya</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans'>
+ <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans'> -->
 <!-- <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/font-awesome.css'> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400, 700'><link rel="stylesheet" href="./style.css">
-
+<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400, 700'><link rel="stylesheet" href="./style.css"> -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans|Montserrat:400,700&display=swap'>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -513,9 +513,27 @@ profile.
 <!-- partial -->
 <div class="globe-container">
    <div class="globe-wrapper">
+     </div>
+</div>
+
+<script>
+    // This script loads the globe 2 seconds AFTER your page finishes loading
+    window.addEventListener("load", function () {
+            setTimeout(function () {
+                    var s = document.createElement("script");
+                    s.src = "//clustrmaps.com/globe.js?d=Ciq7uB3ZZvVj9qFqixiU0KktQ-Y3-oB2v7s8U4kCY8Y";
+                    s.id = "clstr_globe"; 
+                    s.async = true;
+                    document.querySelector('.globe-wrapper').appendChild(s);
+            }, 2000); // 2000 milliseconds = 2 seconds delay
+    });
+</script>
+    <!-- <div class="globe-container">
+   <div class="globe-wrapper">
      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Ciq7uB3ZZvVj9qFqixiU0KktQ-Y3-oB2v7s8U4kCY8Y"></script>
    </div>
- </div>
+ </div> 
+    -->
 <!-- <script>
         window.addEventListener("load", function () {
                 setTimeout(function () {
